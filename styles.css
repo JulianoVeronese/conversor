@@ -1,0 +1,178 @@
+
+
+:root{
+    --primary-color: #f3eeee;
+    --secondary-color: #f7f7f7;
+    --tertiary-color: #4e768d;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('truetype'), url('Poppins-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    color: #616161;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.siteName{
+    font-size: 3rem;
+    
+}
+
+.description{
+    margin: 0; 
+}
+
+.question{
+    margin: 0; 
+}
+
+.stepcontainer{
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    text-align: center;
+    
+}
+
+.container{
+    display:inline-block;
+    height: 450px;
+    width: 400px;
+    margin: 50px;
+    background: #f7f7f7;
+    box-shadow: 3px 3px 20px 1px #9f9999;
+    border-radius: 15px;
+    
+}
+
+.title{
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.unitsForm{
+    font-size: 1.4rem;
+    margin: center;
+    
+}
+
+.unityInput{
+    background: var(--primary-color);
+    font-size: 1.2rem;
+    width: 65px;
+    height: 35px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    color: #616161;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #9f9999;
+    border-radius: 12px;
+}
+
+.formInput{
+    background: var(--primary-color);
+    font-size: 1.4rem;
+    width: 135px;
+    height: 25px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    color: #616161;
+    text-align: center;
+    box-shadow: 1px 1px 5px 1px #9f9999;
+    border-radius: 12px;
+}
+
+.formInput:focus{
+    border: 3px solid var(--tertiary-color);
+    outline: none;
+}
+
+.unityInput:focus{
+    border: 3px solid var(--tertiary-color);
+    outline: none;
+}
+
+.formSubmit{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background: var(--tertiary-color);
+    display: block;
+    margin: auto;  
+    width: 215px;
+    height: 50px;
+    color: var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    border-radius: 12px;
+}
+
+#result1{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#result2{
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family:'Poppins';
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    caption-side:top;
+    box-shadow: 3px 3px 20px 1px #9f9999;
+}
+
+th{
+    color: #f3eeee;
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: #4e768d;
+}
+
+td{
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+/*odd aplicado para todas os elementos ímpares*/
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+/*even aplicado para todos os elementos pares*/
+table tr:nth-child(even) {
+    background-color: #ddd;
+}
