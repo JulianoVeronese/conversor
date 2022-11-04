@@ -160,6 +160,10 @@ body{
     font-family:'Poppins';
 }
 
+.table{
+    display: flex;
+}
+
 table{
     width: 700px;
     border-collapse: collapse;
