@@ -28,12 +28,21 @@ body{
     
 }
 
+.introduction{
+    max-width: 700px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .description{
     margin: 0; 
 }
 
 .question{
     margin: 0; 
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .stepcontainer{
@@ -51,7 +60,10 @@ section{
     display:inline-block;
     height: 450px;
     width: 400px;
-    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background: #f7f7f7;
     box-shadow: 3px 3px 20px 1px #9f9999;
     border-radius: 15px;
@@ -149,7 +161,7 @@ body{
 }
 
 table{
-    width: 50%;
+    width: 700px;
     border-collapse: collapse;
     caption-side:top;
     box-shadow: 3px 3px 20px 1px #9f9999;
@@ -175,4 +187,32 @@ table tr:nth-child(odd) {
 /*even aplicado para todos os elementos pares*/
 table tr:nth-child(even) {
     background-color: #ddd;
+}
+
+#reference{
+    font-size: 0.77rem;
+}
+
+#title2{
+    padding-top: 100px;
+}
+
+#conteudo{
+    max-width: 700px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+img{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: block;
+}
+
+footer{
+    padding: 30px;
+    margin-left: 30px;
 }
