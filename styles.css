@@ -1,5 +1,3 @@
-
-
 :root{
     --primary-color: #f3eeee;
     --secondary-color: #f7f7f7;
@@ -11,7 +9,6 @@
     src: url('Poppins-Regular.ttf') format('truetype'), url('Poppins-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body{
@@ -53,7 +50,6 @@ body{
 
 section{
     text-align: center;
-    
 }
 
 .container{
@@ -68,7 +64,6 @@ section{
     background: #f7f7f7;
     box-shadow: 3px 3px 20px 1px #9f9999;
     border-radius: 15px;
-    
 }
 
 .title{
@@ -220,7 +215,35 @@ img{
     display: block;
 }
 
-footer{
-    padding: 30px;
-    margin-left: 30px;
+.step {
+    list-style: none;
+}
+
+.main-footer {
+    list-style: none;
+    margin-top: 100px;
+    line-height: 30px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.privacy {
+    margin-top: 100px;
+    max-width: 700px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    
+}
+
+@media (max-width: 768px) {
+    .privacy {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
 }
