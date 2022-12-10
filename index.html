@@ -6,7 +6,7 @@
 <title> µ Conversor de Unidades</title>
 <meta name="description" content="Para quem quer converter medidas em kg para m3, e de m3 para kg.">
 <meta name="keywords" content="kg para m3, m3 para kg, trocar unidade materiais, transformar kg em m3, transformar m3 em kg, transformar kg m3, transformar m3 kg, converter m3 kg, converter kg m3, conversor kg m3, conversor m3 kg, conversor kg m³, conversor m³ kg, transformar kg m³, transformar m³ kg, kg m3, m3 kg, kg m³, m³ kg, converter peso volume, converter volume peso, conversor peso volume, conversor volume peso">
-<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
 
 </head>
 
@@ -30,9 +30,7 @@
             <div class="stepcontainer">
                 <ul class="step">
                     <li><b>Passo 1.</b> Insira o valor referente à Densidade do Material (µ) - encontrado na <a class="link" href="#tabela" title="Tabela de Materiais">Tabela de Materiais</a> abaixo.</li>
-                    <br>
                     <li><b>Passo 2.</b> Selecione a Unidade (kg ou m³) da qual você possui o valor e insira a quantia à converter.</li>
-                    <br>
                     <li><b>Pronto!</b> Basta clicar em CALCULAR e você encontrará o resultado desejado.</li>
                 </ul>
             </div>
@@ -47,21 +45,26 @@
 
                 <div> 
                     <form class="unitsForm" id="unitsForm">
-                        <label>
+                        <label for="density">
                             <p align="center">Densidade do Material</p>
                         </label>
-                        <p align="center"><a href="#tabela" title="Tabela de Materiais" class="link"> µ = </a><input type="number" name="density" class="formInput" id="density" min="1" max="10000" required></p>
+                        <label for="density" align="center">
+                            <a href="#tabela" title="Tabela de Materiais" class="link"> µ = </a>
+                        </label><input type="number" name="density" class="formInput" id="density" min="1" max="10000" required></label>
 
-                        <label for="unity"><p align="center">Unidade de Medida</p> 
+                        <label for="unity">
+                            <p align="center">Unidade de Medida</p> 
                         </label>
 
+                        <label for="unity">
                         <p align="center">
                             <select name="unity" class="unityInput" id="unityInput">
                                 <option value="1">kg</option>
                                 <option value="2">m³</option>
                             </select>
                             = <input type="number" name="unity" class="formInput" id="unity" min="0" max="1000000" step=".0001" required>
-                        </p>    
+                        </p>
+                        </label>    
 
                         <button type="submit" class="formSubmit">Calcular!</button>
                     </form>
@@ -171,7 +174,7 @@
         <p>Densidade é a concentração de matéria num determinado espaço (volume). Para medi-la dividimos a massa (kg) de um material pelo volume (m³) que ele ocupa.</p>
         <p>Essa relação pode ser expressa pela fórmula:</p>
 
-        <img class="formula" src="formula2.jpg" width="150px" height="100px">
+        <img class="formula2" src="formula2.jpg" alt="Fórmula da Densidade - d=m/v">
 
         <p>Onde:</p>
         <p>
@@ -185,22 +188,22 @@
         <p>No SI (Sistema Internacional de Unidades), a unidade de densidade é o quilograma por metro cúbico (<b>kg/m³</b>).</p>
     
         <p><b>Exemplo 1.</b> Um cubo com medidas de 1 metro de altura, 1 metro de largura e 1 metro de profundidade.</p>
-        <img class="cubo" src="cubo1.jpg" width="400px" height="400px">
+        <img class="cubo" src="cubo1.jpg" alt="cubo vazio com dimensões de 1x1x1 = 1,0 m³">
         <p>O volume deste cubo é obtido pela multiplicação de suas medidas - altura, largura e profundidade.</p>
         <p>Volume = 1 x 1 x 1 = <b>1 m³</b></p>
 
         <p>Agora o mesmo cubo, porém, completamente cheio de matéria - neste caso, pedra.</p>
-        <img class="cubo" src="cubo2.jpg" width="400px" height="400px">
+        <img class="cubo" src="cubo2.jpg" alt="cubo cheio com dimensões de 1x1x1 = 1,0 m³">
         <p>Pesando este cubo cheio de pedra, encontramos o valor de 2.500 kg, e assim, obtemos a relação de <b>kg</b> por <b>m³</b>.</p>
 
-        <img class="formula" src="formula3.jpg" width="450px" height="75px">
+        <img class="formula4" src="formula3.jpg" alt="Equação - d=2.000/1 = 2.000kg/m³">
 
         <p><b>Exemplo 2.</b> Um cubo com medidas de 2 metros de altura, 2 metros de largura e 2 metros de profundidade. Dessa vez, com areia.</p>
-        <img class="cubo" src="cubo3.jpg" width="400px" height="400px">
+        <img class="cubo" src="cubo3.jpg" alt="cubo cheio com dimensões de 2x2x2 = 8,0 m³">
         <p>Volume = 2 x 2 x 2 = <b>8 m³</b></p>
         <p>Pesando este cubo cheio de areia, encontramos o valor de 12.000 kg, e assim, obtemos a relação de <b>kg</b> por <b>m³</b>.</p>
 
-        <img class="formula" src="formula4.jpg" width="450px" height="75px">
+        <img class="formula4" src="formula4.jpg" alt="Equação - d=12.000/8 = 2.500kg/m³">
 
         <p><b>Conclusão.</b> Cada material tem sua própria densidade - relação peso por volume - e para fazermos a conversão entre as unidades kg e m³ é necessário identificar qual é a densidade do material.</p>
         <p>É importante ressaltar que a pressão e a temperatura exercidas nos materiais alteram sua densidade. Por exemplo, areia seca e areia úmida possuem densidades significativamente diferentes - 1.600kg/m³ e 2.300 kg/m³, respectivamente. </p>

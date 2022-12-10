@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     src: url('Poppins-Regular.ttf') format('truetype'), url('Poppins-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -46,6 +46,11 @@ body{
     margin-top: -20px;
     display: flex;
     justify-content: center;
+}
+
+.step li {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 section{
@@ -171,7 +176,7 @@ table{
 }
 
 th{
-    color: #f3eeee;
+    color: #fff;
     border-collapse: collapse;
     padding: 5px;
     background-color: #4e768d;
@@ -246,4 +251,19 @@ img{
     body {
         padding: 10px;
     }
+}
+
+.cubo {
+    height: 315px;
+    width: 300px;
+}
+
+.formula2 {
+    width: 150px;
+    height: 125px;
+}
+
+.formula4 {
+    width: 450px;
+    height: 75px;
 }
